@@ -39,19 +39,19 @@
                   <div class="dropdown hidden md:block lg:block">
                     
                     <ul class="mt-3 p-2 pl-3 rounded-box flex gap-4 ">
-                      <li><a>Home</a></li>
-                      <li><a>About Us</a></li>
-                      <li><a>Shop</a></li>
-                      <li><a>All Fruits</a></li>
+                      <li  class=" btn btn-ghost normal-case " ><a>Home</a></li>
+                      <li  class=" btn btn-ghost normal-case " ><a>About Us</a></li>
+                      <li class=" btn btn-ghost normal-case " ><a>Shop</a></li>
+                      <li class=" btn btn-ghost normal-case " ><a>All Fruits</a></li>
                     </ul>
                   </div>
                 </div>
-                <div class="navbar-center w-3/4 pl-4 md:w-1/4 flex order-1 md:order-2 lg:order-2">
+                <div class="navbar-center w-3/4 pl-2 md:w-1/4 flex order-1 md:order-2 lg:order-2">
                     <img src="./images/logo.png" alt="">
                   <a class="btn btn-ghost normal-case text-xl">Fruit Brust</a>
                 </div>
-                <div class="navbar-end h-12 w-30 bg-white rounded-full pl-3 hidden md:block order-2 md:order-3 text-right">
-                    <input id="search" type="search" placeholder="Search here" ;>
+                <div class="navbar-end h-12 w-1/4 bg-white rounded-full pl-3 hidden md:block order-2 md:order-3 text-right">
+                    <input class="w-3/4 md:w-3/5" id="search" type="search" placeholder="Search here" ;>
                   <button class="btn btn-circle">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                   </button>
@@ -59,6 +59,37 @@
                 </div>
               </div>
         </section>
+        <!-- slider -->
+        <div class="carousel w-full mt-10">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./images/banner1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="./images/banner2.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="./images/banner3.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="./images/banner4.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
 
     </header>
     <main>
